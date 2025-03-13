@@ -42,16 +42,16 @@ while(true){
     }
 
     // Conditional that determines who wins.
-    if ((playerChoice == 'rock' && pcChoice == 'paper') || 
-        (playerChoice == 'paper' && pcChoice == 'scissors') ||
-        (playerChoice == 'scissors' && pcChoice == 'rock')){
+    if ((playerChoice === 'rock' && pcChoice === 'paper') || 
+        (playerChoice === 'paper' && pcChoice === 'scissors') ||
+        (playerChoice === 'scissors' && pcChoice === 'rock')){
 
         alert(`You lost!! \nYou chose : ${playerChoice} \nComputer chose : ${pcChoice}`);
 
     }
-    else if ((playerChoice == 'rock' && pcChoice == 'scissors') ||
-            (playerChoice == 'paper' && pcChoice == 'rock') ||
-            (playerChoice == 'scissors' && pcChoice == 'paper')){
+    else if ((playerChoice === 'rock' && pcChoice === 'scissors') ||
+            (playerChoice === 'paper' && pcChoice === 'rock') ||
+            (playerChoice === 'scissors' && pcChoice === 'paper')){
 
         alert(`You win!! \nYou chose : ${playerChoice} \nComputer chose : ${pcChoice}`);
 
@@ -68,7 +68,7 @@ while(true){
     //  Continue or Quite
     playerChoice = prompt('Do you want to play again? y / n','y').trim().toLowerCase();
             
-            if (playerChoice == null || playerChoice !== 'y'){
+            if (playerChoice === null || playerChoice === 'n'){
                 break;
             }
     
