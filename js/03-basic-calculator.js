@@ -62,6 +62,8 @@ function calculate(x,y,oparation){
     return result;
 }
 calculate(num1, num2, oparator);
+
+// For testing
 console.log(num1);
 console.log(num2);
 console.log(oparator);
