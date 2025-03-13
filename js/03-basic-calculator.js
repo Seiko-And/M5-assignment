@@ -25,23 +25,23 @@ while (isNaN(num2)){
 }
 
  // COLLECT OPERATION TO PERFORM (+,-,*,/) FROM USER
-let oparator;
+let operator;
 do{
-    oparator = prompt('Please enter an oparator that you would like to perform.\nExample: \nAdd : +            Subtract : - \nMultiply : *       Divide : / ');
-    if ((oparator !== '+' && oparator !== '-' && oparator !== '*' && oparator !== '/')){
+    operator = prompt('Please enter an oparator that you would like to perform.\nExample: \nAdd : +            Subtract : - \nMultiply : *       Divide : / ');
+    if ((operator !== '+' && operator !== '-' && operator !== '*' && operator !== '/')){
         alert('Invalid. Please enter an oparator that you would like to perform. ');
     }
 }
-while (oparator !== '+' && oparator !== '-' && oparator !== '*' && oparator !== '/');
+while (operator !== '+' && operator !== '-' && operator !== '*' && operator !== '/');
 
 
 // // ADD A FUNCTION CALLED CALCULATE
-function calculate(x,y,oparation){
+function calculate(x,y,operator){
 
     let result;
 
     // Perform calculation based on the operator
-    switch (oparation) {
+    switch (operator) {
         case '+':
             result = x + y;
             break;
@@ -61,12 +61,12 @@ function calculate(x,y,oparation){
     alert(`The result is: ${result}`);
     return result;
 }
-calculate(num1, num2, oparator);
+calculate(num1, num2, operator);
 
 // For testing
 console.log(num1);
 console.log(num2);
-console.log(oparator);
+console.log(operator);
 
 
 
